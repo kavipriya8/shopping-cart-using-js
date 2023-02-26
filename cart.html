@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cart.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="menu">
+                <ion-icon name="reorder-four" onclick="openFile('order.html')"></ion-icon>
+            </div>
+            <a href="#" class="logo">
+                <ion-icon name="logo-electron"></ion-icon>
+                Electronics
+            </a>
+            <div class="box">
+                <div class="cart-count">0</div>
+                <ion-icon name="cart" id="cart-icon"></ion-icon>
+            </div>
+            <div class="cart">
+                <div class="cart-title">Cart Items</div>
+                <div class="cart-elements">
+    
+                </div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">Rs.0</div>
+                </div>
+                <button class="btn-buy">Place Order</button>
+                <ion-icon name="close-circle" id="cart-close"></ion-icon>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <h2 class="title">Quotes for Electronics</h2>
+        <div class="shop-content">
+            <div class="electron">
+                <div class="pict">
+                    <img src="ipad.JPG" onclick="location.href='ipad.html';">
+                    <img src="mobile.JPG" onclick="openFile('mobile.html')";>
+                    <img src="mac.JPG" onclick="location.href='mac.html';">
+                    <img src="watch.JPG" onclick="location.href='watch.html';">
+                    <img src="air.JPG" onclick="location.href='mobile.html';">
+                    <img src="home.JPG" onclick="location.href='mobile.html';">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="cart.js"></script>
+    <script src="mobile.js"></script>
+</body>
+</html>
